@@ -6,8 +6,8 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 
 dt = pd.read_csv("csv/train_clean.csv")
 
-X = dt[["pclass","male", "age"]]
-y = dt["survived"]
+X = dt[["Pclass","Male", "Age", "Fare"]]
+y = dt["Survived"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
