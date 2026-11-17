@@ -106,11 +106,6 @@ Nous avons crée 3 modèles de classification entrainés et testés sur le même
 ## K-Nearest Neighbors (KNN)
 
 Le KNN prédit la classe d'un individu en fonction des classes de ses K plus proches voisins.
-Les principales étapes consistent à :
-Standardiser les variables.
-Tester différentes valeurs de n_neighbors.
-Entraîner le modèle sur les données d'entraînement.
-Évaluer les prédictions sur les données de test.
 
 ## Régression logistique
 
