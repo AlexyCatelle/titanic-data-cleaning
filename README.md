@@ -112,10 +112,9 @@ Le KNN prédit la classe d'un individu en fonction des classes de ses K plus pro
 La régression logistique est un algorithme de classification permettant d'estimer la probabilité qu'un passager ait survécu.
 Elle permet notamment d'étudier l'influence des différentes variables sur la probabilité de survie.
 
-## Random Forest
+## Arbre de décision
 
-Random Forest est un algorithme basé sur un ensemble d'arbres de décision.
-Il combine plusieurs arbres afin d'obtenir une prédiction plus robuste et permet également d'étudier l'importance des variables dans les prédictions.
+Un arbre de décision est un modèle qui prend une décision en suivant une série de questions successives, comme un arbre avec des branches, afin de prédire un résultat.
 
 ## 4. Comparaison des modèles
 
@@ -135,7 +134,7 @@ Trois modèles de classification ont été entraînés afin de prédire la survi
 |---|---|---|
 | **KNN** | Simple à comprendre, capture les relations non linéaires. | Sensible à l'échelle des variables et au choix de K. |
 | **Régression logistique** | Rapide et facilement interprétable. | Moins adaptée aux relations complexes et non linéaires. |
-| **Random Forest** | Capture les interactions, gère les relations non linéaires et mesure l'importance des variables. | Nécessite un réglage plus poussé des hyperparamètres et rique de surapprentissage élevé. |
+| **Arbre de décision** | Capture les interactions, gère les relations non linéaires et mesure l'importance des variables. | Nécessite un réglage plus poussé des hyperparamètres et rique de surapprentissage élevé. |
 
 ### Conclusion
 
