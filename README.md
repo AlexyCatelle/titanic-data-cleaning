@@ -100,10 +100,13 @@ Cette étape permet de formuler plusieurs hypothèses, notamment :
 - Les passagers de première classe ont bénéficié de meilleures chances de survie.
 - Le prix du billet a une influence sur la survie
 
-## 🤖 3. Création des modèles
+## 3. Création des modèles
 
 Nous avons crée 3 modèles de classification entrainés et testés sur le même dataset df_clean :
 - KNN : model_KNN.ipynb
 - Logistic Regression : reglog.ipynb
 - Random Forest :  DTC.ipynb
+
+## 4. Comparaison des modèles
+
 
