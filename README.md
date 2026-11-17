@@ -107,7 +107,52 @@ Nous avons crée 3 modèles de classification entrainés et testés sur le même
 - Logistic Regression : reglog.ipynb
 - Random Forest :  DTC.ipynb
 
+## K-Nearest Neighbors (KNN)
+
+Le KNN prédit la classe d'un individu en fonction des classes de ses K plus proches voisins.
+Les principales étapes consistent à :
+Standardiser les variables.
+Tester différentes valeurs de n_neighbors.
+Entraîner le modèle sur les données d'entraînement.
+Évaluer les prédictions sur les données de test.
+
+## Régression logistique
+
+La régression logistique est un algorithme de classification permettant d'estimer la probabilité qu'un passager ait survécu.
+Elle permet notamment d'étudier l'influence des différentes variables sur la probabilité de survie.
+
+## Random Forest
+
+Random Forest est un algorithme basé sur un ensemble d'arbres de décision.
+Il combine plusieurs arbres afin d'obtenir une prédiction plus robuste et permet également d'étudier l'importance des variables dans les prédictions.
+
 ## 4. Comparaison des modèles
+
+Trois modèles de classification ont été entraînés afin de prédire la survie des passagers du Titanic.
+
+### Résultats
+
+| Métrique | KNN | Régression logistique | Random Forest |
+|---|---:|---:|---:|
+| Accuracy Train | 86,22 % | 83,92 % | 84,83 % |
+| Accuracy Test | 80,34 % | **80,52 %** | 79,82 % |
+| Écart Train/Test | 5,88 pts | **3,40 pts** | 5,01 pts |
+
+### Avantages et inconvénients
+
+| Modèle | Avantages | Inconvénients |
+|---|---|---|
+| **KNN** | Simple à comprendre, capture les relations non linéaires. | Sensible à l'échelle des variables et au choix de K. |
+| **Régression logistique** | Rapide, interprétable et fournit des probabilités. | Moins adaptée aux relations complexes et non linéaires. |
+| **Random Forest** | Capture les interactions, gère les relations non linéaires et mesure l'importance des variables. | Plus difficile à interpréter et nécessite un réglage des hyperparamètres. |
+
+### Conclusion
+
+Les trois modèles obtiennent des performances relativement proches, avec une accuracy autour de 80 %.
+
+La **régression logistique** obtient le meilleur score sur le jeu de test (80,52 %) et présente le plus faible écart entre les performances d'entraînement et de test. Elle offre donc le meilleur compromis parmi les résultats obtenus.
+
+Random Forest reste intéressant pour analyser l'importance des variables, tandis que KNN constitue une approche simple et efficace pour comparer les performances.
 
 ⚙️ Installation et utilisation
 
@@ -127,23 +172,11 @@ git clone <URL_DU_DEPOT>
 
 cd titanic-data-cleaning
 
-3. Créer un environnement virtuel (recommandé)
-
-python -m venv venv
-
-Activation sous Windows :
-
-venv\Scripts\activate
-
-Activation sous Linux / macOS :
-
-source venv/bin/activate
-
-4. Installer les dépendances
+3. Installer les dépendances
 
 pip install -r requirements.txt
 
-5. Lancer Jupyter Notebook
+4. Lancer Jupyter Notebook
 
 jupyter notebook
 
@@ -154,8 +187,6 @@ Vous pourrez ensuite ouvrir les notebooks et exécuter les différentes étapes 
 Python : langage de programmation.
 
 Pandas : manipulation et nettoyage des données.
-
-NumPy : calcul numérique.
 
 Matplotlib : visualisation des données.
 
@@ -171,12 +202,6 @@ Git / GitHub : gestion de versions et collaboration.
 📚 Sources et ressources
 
 Dataset Titanic – Kaggle
-
-Documentation Pandas
-
-Documentation Scikit-learn
-
-Documentation Matplotlib
 
 
 
