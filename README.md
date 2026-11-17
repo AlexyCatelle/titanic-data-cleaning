@@ -107,6 +107,82 @@ Nous avons crée 3 modèles de classification entrainés et testés sur le même
 - Logistic Regression : reglog.ipynb
 - Random Forest :  DTC.ipynb
 
+⚙️ Installation et utilisation
+
+Prérequis
+
+Python 3.10 ou supérieur
+
+Jupyter Notebook
+
+Git
+
+1. Cloner le dépôt
+
+git clone <URL_DU_DEPOT>
+
+2. Accéder au projet
+
+cd titanic-data-cleaning
+
+3. Créer un environnement virtuel (recommandé)
+
+python -m venv venv
+
+Activation sous Windows :
+
+venv\Scripts\activate
+
+Activation sous Linux / macOS :
+
+source venv/bin/activate
+
+4. Installer les dépendances
+
+pip install -r requirements.txt
+
+5. Lancer Jupyter Notebook
+
+jupyter notebook
+
+Vous pourrez ensuite ouvrir les notebooks et exécuter les différentes étapes du projet.
+
+🛠️ Technologies utilisées
+
+Python : langage de programmation.
+
+Pandas : manipulation et nettoyage des données.
+
+NumPy : calcul numérique.
+
+Matplotlib : visualisation des données.
+
+Seaborn : visualisation statistique.
+
+Scikit-learn : prétraitement, entraînement et évaluation des modèles.
+
+Jupyter Notebook : environnement de développement et d'analyse.
+
+Git / GitHub : gestion de versions et collaboration.
+
+🎓 Compétences mobilisées
+
+Ce projet permet notamment de travailler les compétences suivantes :
+
+C34 – Nettoyage et transformation des données : gestion des valeurs manquantes, encodage des variables, feature engineering et réduction de dimensionnalité.
+
+C39 – Analyse exploratoire des données : exploration statistique, visualisation, étude des corrélations et formulation d'hypothèses.
+
+📚 Sources et ressources
+
+Dataset Titanic – Kaggle
+
+Documentation Pandas
+
+Documentation Scikit-learn
+
+Documentation Matplotlib
+
 ## 4. Comparaison des modèles
 
 
