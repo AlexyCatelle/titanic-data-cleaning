@@ -153,19 +153,19 @@ Jupyter Notebook
 
 Git
 
-1. Cloner le dépôt
+## 1. Cloner le dépôt
 
 git clone <URL_DU_DEPOT>
 
-2. Accéder au projet
+## 2. Accéder au projet
 
 cd titanic-data-cleaning
 
-3. Installer les dépendances
+## 3. Installer les dépendances
 
 pip install -r requirements.txt
 
-4. Lancer Jupyter Notebook
+## 4. Lancer Jupyter Notebook
 
 jupyter notebook
 
