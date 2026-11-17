@@ -107,6 +107,8 @@ Nous avons crée 3 modèles de classification entrainés et testés sur le même
 - Logistic Regression : reglog.ipynb
 - Random Forest :  DTC.ipynb
 
+## 4. Comparaison des modèles
+
 ⚙️ Installation et utilisation
 
 Prérequis
@@ -165,13 +167,6 @@ Jupyter Notebook : environnement de développement et d'analyse.
 
 Git / GitHub : gestion de versions et collaboration.
 
-🎓 Compétences mobilisées
-
-Ce projet permet notamment de travailler les compétences suivantes :
-
-C34 – Nettoyage et transformation des données : gestion des valeurs manquantes, encodage des variables, feature engineering et réduction de dimensionnalité.
-
-C39 – Analyse exploratoire des données : exploration statistique, visualisation, étude des corrélations et formulation d'hypothèses.
 
 📚 Sources et ressources
 
@@ -183,6 +178,6 @@ Documentation Scikit-learn
 
 Documentation Matplotlib
 
-## 4. Comparaison des modèles
+
 
 
