@@ -25,9 +25,6 @@ titanic-data-cleaning/
 ├── .git/
 │
 ├── csv/
-│   ├── dataset-titanic.csv
-│   ├── gender_submission.csv
-│   ├── test.csv
 │   ├── train_clean.csv
 │   └── train.csv
 │
@@ -49,7 +46,6 @@ titanic-data-cleaning/
 | `csv/` | Dossier contenant les différents fichiers CSV du projet. |
 | `train.csv` | Données d'entraînement d'origine. |
 | `train_clean.csv` | Jeu de données après nettoyage et préparation. |
-| `gender_submission.csv` | Fichier de soumission de référence fourni par Kaggle. |
 | `exploration.ipynb` | Notebook consacré à l'analyse exploratoire. |
 | `main.ipynb` | Notebook principal du projet. |
 | `model_KNN.ipynb` | Entraînement et évaluation du modèle KNN. |
