@@ -143,7 +143,7 @@ Les trois modèles obtiennent des performances relativement proches, avec une ac
 
 La **régression logistique** obtient le meilleur score sur le jeu de test (80,52 %) et présente le plus faible écart entre les performances d'entraînement et de test. Elle offre donc le meilleur compromis parmi les résultats obtenus.
 
-⚙️ Installation et utilisation
+## ⚙️ Installation et utilisation
 
 Prérequis
 
@@ -153,25 +153,25 @@ Jupyter Notebook
 
 Git
 
-## 1. Cloner le dépôt
+1. Cloner le dépôt
 
-git clone <URL_DU_DEPOT>
+  git clone <URL_DU_DEPOT>
 
-## 2. Accéder au projet
+2. Accéder au projet
 
-cd titanic-data-cleaning
+  cd titanic-data-cleaning
 
-## 3. Installer les dépendances
+3. Installer les dépendances
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
-## 4. Lancer Jupyter Notebook
+4. Lancer Jupyter Notebook
 
-jupyter notebook
+  jupyter notebook
 
 Vous pourrez ensuite ouvrir les notebooks et exécuter les différentes étapes du projet.
 
-🛠️ Technologies utilisées
+## 🛠️ Technologies utilisées
 
 Python : langage de programmation.
 
