@@ -134,8 +134,8 @@ Trois modèles de classification ont été entraînés afin de prédire la survi
 | Modèle | Avantages | Inconvénients |
 |---|---|---|
 | **KNN** | Simple à comprendre, capture les relations non linéaires. | Sensible à l'échelle des variables et au choix de K. |
-| **Régression logistique** | Rapide, interprétable et fournit des probabilités. | Moins adaptée aux relations complexes et non linéaires. |
-| **Random Forest** | Capture les interactions, gère les relations non linéaires et mesure l'importance des variables. | Plus difficile à interpréter et nécessite un réglage des hyperparamètres. |
+| **Régression logistique** | Rapide et facilement interprétable. | Moins adaptée aux relations complexes et non linéaires. |
+| **Random Forest** | Capture les interactions, gère les relations non linéaires et mesure l'importance des variables. | Nécessite un réglage plus poussé des hyperparamètres et rique de surapprentissage élevé. |
 
 ### Conclusion
 
