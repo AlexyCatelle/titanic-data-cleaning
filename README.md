@@ -79,12 +79,12 @@ Création de nouvelles variables à partir des données existantes :
 
 **Encodage des variables catégorielles**
 - Encodage de `Sex`.
-- Encodage de `Embarked` à l'aide de la méthode One-Hot Encoding (`pd.get_dummies()`).
+- Encodage de `Embarked` à l'aide pd.get_dummies().
+- Encodage "title" avec pd.get_dummies()
 - Encodage des éventuelles nouvelles variables catégorielles.
 
-**Réduction de la dimensionnalité**
-- Suppression des colonnes non pertinentes pour la prédiction, notamment `PassengerId` et `Ticket`.
-- Standardisation des variables numériques lorsque nécessaire, notamment pour le modèle KNN à l'aide de `StandardScaler`.
+**Nettoyage final du dataset**
+- Suppression des colonnes non pertinentes pour la prédiction
 
 ## 🔎 2. Analyse exploratoire des données (EDA)
 
@@ -92,16 +92,18 @@ La première étape consiste à comprendre les données disponibles et à identi
 
 Les principales analyses portent sur :
 
-- La distribution des âges et des tarifs (`Age`, `Fare`).
-- La répartition des survivants et des personnes décédées (`Survived`).
-- L'influence du sexe (`Sex`) sur la survie.
-- L'influence de la classe du billet (`Pclass`).
-- Les relations entre les différentes variables.
-- L'identification des valeurs aberrantes et des données manquantes.
+- Vérification des outliers
+- Création d'un tableau de corrélation pour trouver les features avec le plus d'impact
 
 Cette étape permet de formuler plusieurs hypothèses, notamment :
 - Les femmes ont davantage survécu que les hommes.
 - Les passagers de première classe ont bénéficié de meilleures chances de survie.
-- L'âge et la composition familiale ont pu influencer les chances de survie.
+- Le prix du billet a une influence sur la survie
 
-## 🤖 3. Mod
+## 🤖 3. Création des modèles
+
+Nous avons crée 3 modèles de classification entrainés et testés sur le même dataset df_clean :
+- KNN : model_KNN.ipynb
+- Logistic Regression : reglog.ipynb
+- Random Forest :  DTC.ipynb
+
