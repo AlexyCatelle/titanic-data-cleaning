@@ -143,8 +143,6 @@ Les trois modèles obtiennent des performances relativement proches, avec une ac
 
 La **régression logistique** obtient le meilleur score sur le jeu de test (80,52 %) et présente le plus faible écart entre les performances d'entraînement et de test. Elle offre donc le meilleur compromis parmi les résultats obtenus.
 
-Random Forest reste intéressant pour analyser l'importance des variables, tandis que KNN constitue une approche simple et efficace pour comparer les performances.
-
 ⚙️ Installation et utilisation
 
 Prérequis
