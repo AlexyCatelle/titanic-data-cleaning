@@ -183,6 +183,8 @@ Seaborn : visualisation statistique.
 
 Scikit-learn : prétraitement, entraînement et évaluation des modèles.
 
+re : Récupération des titres par RegEx
+
 Jupyter Notebook : environnement de développement et d'analyse.
 
 Git / GitHub : gestion de versions et collaboration.
