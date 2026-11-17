@@ -47,9 +47,7 @@ titanic-data-cleaning/
 | Fichier | Description |
 |---|---|
 | `csv/` | Dossier contenant les différents fichiers CSV du projet. |
-| `dataset-titanic.csv` | Dataset Titanic utilisé pour l'analyse. |
 | `train.csv` | Données d'entraînement d'origine. |
-| `test.csv` | Données de test d'origine. |
 | `train_clean.csv` | Jeu de données après nettoyage et préparation. |
 | `gender_submission.csv` | Fichier de soumission de référence fourni par Kaggle. |
 | `exploration.ipynb` | Notebook consacré à l'analyse exploratoire. |
@@ -59,7 +57,36 @@ titanic-data-cleaning/
 | `DTC.ipynb` | Notebook dédié à l'étude d'un modèle de classification. |
 | `requirements.txt` | Liste des dépendances Python nécessaires au projet. |
 
-## 🔎 1. Analyse exploratoire des données (EDA)
+## 🧹 1. Nettoyage et transformation des données
+
+Le dataset initial présente plusieurs problèmes qui nécessitent un travail de préparation avant la modélisation.
+
+Les principales opérations de préparation comprennent :
+
+**Gestion des valeurs manquantes**
+- Vérification des doublons
+  
+**Gestion des valeurs manquantes**
+- Traitement des valeurs manquantes dans `Age` (environ 20 % des données).
+- Suppression de la variable `Cabin`, qui comporte plus de 75 % de valeurs manquantes.
+- Traitement des valeurs manquantes dans `Embarked`.
+
+**Feature Engineering**
+
+Création de nouvelles variables à partir des données existantes :
+- Extraction du titre des passagers (`Mr`, `Mrs`, `Miss`, `Master`, etc.) depuis la colonne `Name`.
+- Création d'une variable `IsAlone` permettant d'identifier les passagers voyageant seuls.
+
+**Encodage des variables catégorielles**
+- Encodage de `Sex`.
+- Encodage de `Embarked` à l'aide de la méthode One-Hot Encoding (`pd.get_dummies()`).
+- Encodage des éventuelles nouvelles variables catégorielles.
+
+**Réduction de la dimensionnalité**
+- Suppression des colonnes non pertinentes pour la prédiction, notamment `PassengerId` et `Ticket`.
+- Standardisation des variables numériques lorsque nécessaire, notamment pour le modèle KNN à l'aide de `StandardScaler`.
+
+## 🔎 2. Analyse exploratoire des données (EDA)
 
 La première étape consiste à comprendre les données disponibles et à identifier les variables susceptibles d'avoir une influence sur la survie.
 
@@ -76,32 +103,5 @@ Cette étape permet de formuler plusieurs hypothèses, notamment :
 - Les femmes ont davantage survécu que les hommes.
 - Les passagers de première classe ont bénéficié de meilleures chances de survie.
 - L'âge et la composition familiale ont pu influencer les chances de survie.
-
-## 🧹 2. Nettoyage et transformation des données
-
-Le dataset initial présente plusieurs problèmes qui nécessitent un travail de préparation avant la modélisation.
-
-Les principales opérations de préparation comprennent :
-
-**Gestion des valeurs manquantes**
-- Traitement des valeurs manquantes dans `Age` (environ 20 % des données).
-- Suppression ou exploitation de la variable `Cabin`, qui comporte plus de 75 % de valeurs manquantes.
-- Traitement des valeurs manquantes dans `Embarked`.
-
-**Feature Engineering**
-
-Création de nouvelles variables à partir des données existantes :
-- Extraction du titre des passagers (`Mr`, `Mrs`, `Miss`, `Master`, etc.) depuis la colonne `Name`.
-- Création d'une variable `FamilySize` à partir de `SibSp` et `Parch`.
-- Création d'une variable `IsAlone` permettant d'identifier les passagers voyageant seuls.
-
-**Encodage des variables catégorielles**
-- Encodage de `Sex`.
-- Encodage de `Embarked` à l'aide de la méthode One-Hot Encoding (`pd.get_dummies()`).
-- Encodage des éventuelles nouvelles variables catégorielles.
-
-**Réduction de la dimensionnalité**
-- Suppression des colonnes non pertinentes pour la prédiction, notamment `PassengerId` et `Ticket`.
-- Standardisation des variables numériques lorsque nécessaire, notamment pour le modèle KNN à l'aide de `StandardScaler`.
 
 ## 🤖 3. Mod
